@@ -16,7 +16,7 @@ architecture rtl of ripple_carry_adder_2_FA is
             i_bit2  : in std_logic;
             i_carry : in std_logic;
             o_sum   : out std_logic;
-            o_carry : out std_logic
+            o_carry : out std_logic  -- Specify the data type here
         );
     end component full_adder;
 
@@ -47,3 +47,4 @@ begin
     o_result <= w_CARRY(2) & w_SUM; -- VHDL Concatenation
 
 end rtl;
+
